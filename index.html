@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do Conhecimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1>Desafio do Conhecimento</h1>
+            <p>Teste seus conhecimentos sobre tecnologia!</p>
+
+            <div id="inicio">
+                <button onclick="iniciarJogo()">Começar jogo</button>
+            </div>
+
+            <div id="jogo" hidden>
+                <p id="progresso"></p>
+                <h2 id="pergunta"></h2>
+
+                <div id="alternativas"></div>
+
+                <p id="feedback"></p>
+
+                <button id="proximo" onclick="proximaPergunta()" hidden>
+                    Próxima pergunta
+                </button>
+            </div>
+
+            <div id="resultado" hidden>
+                <h2>Fim de jogo!</h2>
+                <p id="pontuacaoFinal"></p>
+                <p id="mensagemFinal"></p>
+                <button onclick="iniciarJogo()">Jogar novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
